@@ -154,20 +154,20 @@ namespace Proiect_DAW_Cinemavazut.Controllers
 
             if (!IsValidPassword(utilizatori.parola))
             {
-                ModelState.AddModelError(nameof(Utilizatori.email), "Parola invalida! (min.8 char., sa includa A-Z si 1-9)");
+                ModelState.AddModelError(nameof(Utilizatori.parola), "Parola invalida! (min.8 char., sa includa A-Z si 1-9)");
             }
 
             if (utilizatori.telefon != null)
             {
                 if (!IsValidPhone(utilizatori.telefon))
                 {
-                    ModelState.AddModelError(nameof(Utilizatori.email), "Nr. de telefon invalid!");
+                    ModelState.AddModelError(nameof(Utilizatori.telefon), "Nr. de telefon invalid!");
                 }
             }
 
             if (!IsValidAge(utilizatori.data_nastere))
             {
-                ModelState.AddModelError(nameof(Utilizatori.email), "Varsta minima de 13 ani!");
+                ModelState.AddModelError(nameof(Utilizatori.data_nastere), "Varsta minima de 13 ani!");
             }
 
             if (ModelState.IsValid)

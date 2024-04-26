@@ -42,7 +42,7 @@
             <div class="form-group">
                 <label asp-for="telefon" class="control-label"></label>
                 <input asp-for="telefon" class="form-control" />
-                <span asp-validation-for="telefon" class="text-danger"></span>
+                <span asp-validation-for="telefon" id="span_telefon" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="data_nastere" class="control-label"></label>
@@ -60,7 +60,7 @@
                 <span asp-validation-for="rol" class="text-danger"></span>
             </div> *@
             <div class="create" style="margin: 30px 10px 30px 20px">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input name="create_util" type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
