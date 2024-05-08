@@ -64,7 +64,7 @@
             @if (@HttpContextAccessor?.HttpContext?.Request.Cookies["UserRol"] == "100")
             {
                 <li>
-                    <a class="button" asp-area="" asp-controller="Home" asp-action="Admin"
+                    <a id="btn-admin" class="button" asp-area="" asp-controller="Home" asp-action="Admin"
                        style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 20px;color: white;"> Administration </a>
                 </li>
             }
